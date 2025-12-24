@@ -16,7 +16,11 @@ jobs:
       uses: actions/checkout@v2
     - name: Fetch latest data
       run: |-
-        curl 'https://api.backend.octopus.energy/v1/graphql/' -X POST -H 'Content-Type: application/json' --data-raw '{"query":"{ greenerNightsForecast { date greennessScore isGreenerNight greennessIndex } }"}' | jq . > greener-nights-history.json
+        curl 'https://api.backend.octopus.energy/v1/graphql/' -X POST -H 'Content-Type: application/json' --data-raw '{"query":"{ greenerNightsForecast { date greennessScore isGreenerNight greennessIndex } }"}' > greener-nights-history-new.json
+    - name: Merge with historical data
+      run: |-
+        jq -s '.[1] as $old | .[0] as $new | ($old.data.greenerNightsForecast // [] | map({(.date): (.wasGreenerNight // .isGreenerNight)}) | add // {}) as $history | $new | .data.greenerNightsForecast |= map(. + {wasGreenerNight:  ($history[.date] // .isGreenerNight)})' greener-nights-history-new.json greener-nights-history.json > greener-nights-history.json.tmp && mv greener-nights-history.json.tmp greener-nights-history.json
+        rm -f greener-nights-history-new.json
     - name: Commit and push if it changed
       run: |-
         git config user.name "Automated"
