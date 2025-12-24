@@ -29,3 +29,18 @@ jobs:
         timestamp=$(date -u)
         git commit -m "Latest data: ${timestamp}" || exit 0
         git push
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+    - name: Install dependencies
+      run: pip install icalendar
+    - name: Generate/Update Calendar
+      run: python generate_calendar.py
+    - name: Commit calendar if changed
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git add greener-nights-history.ics
+        git diff --staged --quiet || git commit -m "Update calendar: $(date +'%Y-%m-%d')"
+        git push
