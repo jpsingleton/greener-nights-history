@@ -1,6 +1,6 @@
 # Greener Nights History
 
-This repository automatically scrapes and archives the latest "Greener Nights" forecast from the [Octopus Energy GB API](https://api.backend.octopus.energy/v1/graphql/#query=%7B%0A%20%20greenerNightsForecast%20%7B%0A%20%20%20%20date%0A%20%20%20%20greennessScore%0A%20%20%20%20isGreenerNight%0A%20%20%20%20greennessIndex%0A%20%20%7D%0A%7D).
+This repository automatically archives the daily "Greener Nights" forecast from the [Octopus Energy GB API](https://api.backend.octopus.energy/v1/graphql/#query=%7B%0A%20%20greenerNightsForecast%20%7B%0A%20%20%20%20date%0A%20%20%20%20greennessScore%0A%20%20%20%20isGreenerNight%0A%20%20%20%20greennessIndex%0A%20%20%7D%0A%7D).
 
 ## What it does
 
@@ -10,6 +10,8 @@ This repository automatically scrapes and archives the latest "Greener Nights" f
   The retrieved forecast data is stored (and versioned) in a JSON file (`greener-nights-history.json`) in this repository, creating an ongoing historical record.
 - **Historical Tracking:**
   The workflow tracks whether each date was **ever** forecasted as a greener night (new `wasGreenerNight` property), preserving this information even if subsequent forecasts change.
+- **iCal Calendar Export:**
+  An iCal/ICS calendar file (`greener-nights-history.ics`) is automatically generated from the historical data, allowing you to subscribe to or import greener nights directly into your calendar application.
 
 ## How it works
 
@@ -24,6 +26,11 @@ This repository automatically scrapes and archives the latest "Greener Nights" f
   - For each date, if `isGreenerNight` was **ever** `true` in previous scrapes, `wasGreenerNight` remains `true`
   - This creates a permanent record of dates that were predicted to be greener nights, even if forecasts later change
 - The data is written to `greener-nights-history.json`
+- A Python script (`generate_calendar.py`) converts the JSON data into an iCal calendar file:
+  - Creates calendar events for each date in the forecast
+  - Updates existing events when data changes while preserving historical entries
+  - Never removes events, maintaining a complete historical record
+  - Includes greenness score, index, and forecast status in each event
 - If the data changes, it is automatically committed and pushed to the repository by the workflow for versioned history.
 
 ## Historical Tracking Logic
@@ -53,7 +60,7 @@ The `wasGreenerNight` property provides insight into forecast stability:
 {
   "date": "2025-12-25",
   "isGreenerNight": false,
-  "wasGreenerNight":  true
+  "wasGreenerNight": true
 }
 ```
 
@@ -67,7 +74,7 @@ This shows that December 25th was **originally** predicted to be a greener night
     "greenerNightsForecast": [
       {
         "date": "2025-12-23",
-        "greennessScore":  52,
+        "greennessScore": 52,
         "isGreenerNight": true,
         "greennessIndex": "MEDIUM",
         "wasGreenerNight": true
@@ -86,14 +93,33 @@ This shows that December 25th was **originally** predicted to be a greener night
 
 ## Usage
 
+### JSON data
+
 Simply visit the repository to access or download the latest historical and current forecast data from `greener-nights-history.json`.
 Developers and researchers can easily pull the full change history using git.
+
+### iCal calendar
+
+Subscribe to the iCal feed in your calendar application using this URL:
+
+```txt
+https://raw.githubusercontent.com/jpsingleton/greener-nights-history/main/greener-nights-history.ics
+```
+
+This keeps your calendar automatically updated with the latest forecast data.
+
+Each calendar event includes:
+
+- ✅ or ❌ status indicator showing if it was ever forecasted as a greener night
+- Greenness score and index
+- Current forecast status vs. historical status
 
 ### Use cases
 
 - **Forecast reliability analysis:** Compare `isGreenerNight` vs `wasGreenerNight` to identify forecast changes
 - **Planning decisions:** Use `wasGreenerNight` to understand if a date was ever predicted to be greener
 - **Data science:** Study patterns in how forecasts evolve over time
+- **Calendar integration:** View greener nights alongside your other events to plan energy-intensive activities
 
 ## Why archive this?
 
