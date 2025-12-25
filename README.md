@@ -15,13 +15,14 @@ This repository automatically archives the daily "Greener Nights" forecast from 
 
 ## How it works
 
-- The GitHub Actions workflow uses `curl` to POST a GraphQL query to the Octopus Energy backend API endpoint.
-- The response includes forecast information such as:
+- The GitHub Actions workflow uses `curl` to POST a GraphQL query to the Octopus Energy backend API
+- The response includes:
   - `date`: Forecast date
   - `greennessScore`: Numeric index of how "green" the energy is
   - `isGreenerNight`: Boolean flag for greener night eligibility (current forecast)
   - `greennessIndex`: Qualitative rating (e.g. `LOW`, `MEDIUM`, `HIGH`)
-  - `wasGreenerNight`: Boolean flag indicating if this date was **ever** forecasted as a greener night
+- A new parameter is added:
+  - `wasGreenerNight`: New synthetic boolean flag indicating if this date was **ever** forecasted as a greener night
 - The workflow merges new data with historical data using `jq`:
   - For each date, if `isGreenerNight` was **ever** `true` in previous scrapes, `wasGreenerNight` remains `true`
   - This creates a permanent record of dates that were predicted to be greener nights, even if forecasts later change
@@ -33,7 +34,7 @@ This repository automatically archives the daily "Greener Nights" forecast from 
   - Includes greenness score, index, and forecast status in each event
 - If the data changes, it is automatically committed and pushed to the repository by the workflow for versioned history.
 
-## Historical Tracking Logic
+## Historical tracking logic
 
 The `wasGreenerNight` property provides insight into forecast stability:
 
@@ -42,7 +43,7 @@ The `wasGreenerNight` property provides insight into forecast stability:
   - Once `true`, it stays `true` forever for that date
   - `isGreenerNight` can still change based on new forecasts
 
-### Example Scenario
+### Example scenario
 
 **Day 1 scrape:**
 
