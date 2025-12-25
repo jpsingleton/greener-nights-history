@@ -2,6 +2,8 @@
 
 This repository automatically archives the daily "Greener Nights" forecast from the [Octopus Energy GB API](https://api.backend.octopus.energy/v1/graphql/#query=%7B%0A%20%20greenerNightsForecast%20%7B%0A%20%20%20%20date%0A%20%20%20%20greennessScore%0A%20%20%20%20isGreenerNight%0A%20%20%20%20greennessIndex%0A%20%20%7D%0A%7D).
 
+Web app to display the forecast (including previous greener nights that are no longer greener): <https://jpsingleton.github.io/greener-nights-history/>
+
 ## What it does
 
 - **Automated Scraping:**
@@ -99,12 +101,16 @@ This shows that December 25th was **originally** predicted to be a greener night
 Simply visit the repository to access or download the latest historical and current forecast data from `greener-nights-history.json`.
 Developers and researchers can easily pull the full change history using git.
 
+```txt
+https://jpsingleton.github.io/greener-nights-history/greener-nights-history.json
+```
+
 ### iCal calendar
 
 Subscribe to the iCal feed in your calendar application using this URL:
 
 ```txt
-https://raw.githubusercontent.com/jpsingleton/greener-nights-history/main/greener-nights-history.ics
+https://jpsingleton.github.io/greener-nights-history/greener-nights-history.ics
 ```
 
 This keeps your calendar automatically updated with the latest forecast data.
