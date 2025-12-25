@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Greener Nights</title>
+    <meta name="viewport" content="width=device-width">
+    <style>
+        body {
+            color: rgb(216, 216, 216);
+            background-color: black;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        h1 {
+            color: rgb(192, 204, 192);
+            font-size: 1.5rem;
+        }
+
+        #result {
+            font-size: 2rem;
+            min-height: 34rem;
+        }
+
+        .HIGH {
+            color: rgb(127, 235, 19);
+        }
+
+        .MEDIUM {
+            color: rgb(235, 174, 19);
+        }
+
+        .LOW {
+            color: rgb(235, 69, 19);
+        }
+
+        div {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        p {
+            padding: 0;
+            margin: 0;
+        }
+
+        .padded {
+            padding: 8px;
+        }
+
+        .hidden {
+            visibility: hidden;
+        }
+
+        button {
+            background-color: black;
+            color: rgb(205, 207, 214);
+            border-color: rgb(187, 187, 187);
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Greener Nights</h1>
+    </div>
+    <div id="result"></div>
+    <div><button id="refresh-button" class="padded">Refresh</button></div>
+    <div><button id="xmas-button" class="padded hidden">Ho Ho Ho</button></div>
+    <script>
+        async function showBestDay() {
+            const apiUrl = "https://jpsingleton.github.io/greener-nights-history/greener-nights-history.json";
+            let responseData = await fetch(apiUrl, {
+                headers: { "Content-Type": "application/json" }
+            }).then(response => response.json()).then(data => data.data);
+
+            let html = "";
+            for (period of responseData.greenerNightsForecast) {
+                const date = new Date(period.date);
+                const ds = date.toDateString().substring(0, 7);
+                let line = `${ds.substring(0, 3)} ${date.getDate()} ${ds.substring(4)}`;
+                let className = period.greennessIndex;
+                let symbol = { "HIGH": "+", "MEDIUM": "•", "LOW": "-" }[className];
+                if (period.isGreenerNight) {
+                    line = `<span class="HIGH">⇒</span> ${line} <span class="HIGH">⇐</span>`;
+                }
+                html += `<p>${line}</p>`;
+                const scale = Array(Math.round(period.greennessScore / 10) + 1);
+                line = `${scale.join(symbol)} ${period.greennessScore} ${scale.join(symbol)}`;
+                html += `<p class="${className}">${line}</p>`;
+                if (date.getDate() == 25 && date.getMonth() == 11) {
+                    document.getElementById("xmas-button").classList.remove("hidden");
+                }
+            }
+            document.getElementById("result").innerHTML = html;
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("refresh-button").addEventListener("click", function () {
+                showBestDay();
+            });
+            document.getElementById("xmas-button").addEventListener("click", function () {
+                document.getElementById("result").innerHTML =
+                    `                       <p>*</p>
+                                <p class="LOW">A</p>
+                                            <p>||</p>
+                             <p class="LOW">-- MX --</p>
+                                            <p>||</p>
+                        <p class="MEDIUM">•••• EM ••••</p>
+                                            <p>||</p>
+                      <p class="MEDIUM">•••••• RA ••••••</p>
+                                            <p>||</p>
+                      <p class="HIGH">++++++++ RS ++++++++</p>
+                                            <p>||</p>
+                    <p class="HIGH">++++++++++ Y! ++++++++++</p>
+                                            <p>||</p>
+                                <p class="LOW">:)</p>`;
+            });
+            showBestDay();
+        });
+    </script>
+</body>
+
+</html>
