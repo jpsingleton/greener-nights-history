@@ -86,6 +86,8 @@
                 let symbol = { "HIGH": "+", "MEDIUM": "•", "LOW": "-" }[className];
                 if (period.isGreenerNight) {
                     line = `<span class="HIGH">⇒</span> ${line} <span class="HIGH">⇐</span>`;
+                } else if (period.wasGreenerNight) {
+                    line = `<span>→</span> ${line} <span>←</span>`;
                 }
                 html += `<p>${line}</p>`;
                 const scale = Array(Math.round(period.greennessScore / 10) + 1);
