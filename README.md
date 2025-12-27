@@ -2,7 +2,7 @@
 
 This repository automatically archives the daily "Greener Nights" forecast from the [Octopus Energy GB API](https://api.backend.octopus.energy/v1/graphql/#query=%7B%0A%20%20greenerNightsForecast%20%7B%0A%20%20%20%20date%0A%20%20%20%20greennessScore%0A%20%20%20%20isGreenerNight%0A%20%20%20%20greennessIndex%0A%20%20%7D%0A%7D).
 
-Web app to display the forecast (including previous greener nights that are no longer greener): <https://jpsingleton.github.io/greener-nights-history/>
+Web app to display the forecast (including previous greener nights that are no longer greener, smaller grey arrows): <https://jpsingleton.github.io/greener-nights-history/>
 
 ## What it does
 
