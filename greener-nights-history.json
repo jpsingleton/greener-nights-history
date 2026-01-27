@@ -2,50 +2,50 @@
   "data": {
     "greenerNightsForecast": [
       {
-        "date": "2026-01-26",
-        "greennessScore": 90,
+        "date": "2026-01-27",
+        "greennessScore": 59,
+        "isGreenerNight": false,
+        "greennessIndex": "MEDIUM",
+        "wasGreenerNight": false
+      },
+      {
+        "date": "2026-01-28",
+        "greennessScore": 61,
+        "isGreenerNight": false,
+        "greennessIndex": "MEDIUM",
+        "wasGreenerNight": false
+      },
+      {
+        "date": "2026-01-29",
+        "greennessScore": 76,
         "isGreenerNight": true,
         "greennessIndex": "HIGH",
         "wasGreenerNight": true
       },
       {
-        "date": "2026-01-27",
-        "greennessScore": 70,
-        "isGreenerNight": false,
-        "greennessIndex": "HIGH",
-        "wasGreenerNight": false
-      },
-      {
-        "date": "2026-01-28",
-        "greennessScore": 68,
-        "isGreenerNight": false,
-        "greennessIndex": "HIGH",
-        "wasGreenerNight": false
-      },
-      {
-        "date": "2026-01-29",
-        "greennessScore": 73,
-        "isGreenerNight": false,
-        "greennessIndex": "HIGH",
-        "wasGreenerNight": false
-      },
-      {
         "date": "2026-01-30",
-        "greennessScore": 58,
+        "greennessScore": 53,
         "isGreenerNight": false,
         "greennessIndex": "MEDIUM",
         "wasGreenerNight": false
       },
       {
         "date": "2026-01-31",
-        "greennessScore": 47,
+        "greennessScore": 52,
         "isGreenerNight": false,
         "greennessIndex": "MEDIUM",
         "wasGreenerNight": false
       },
       {
         "date": "2026-02-01",
-        "greennessScore": 67,
+        "greennessScore": 66,
+        "isGreenerNight": false,
+        "greennessIndex": "MEDIUM",
+        "wasGreenerNight": false
+      },
+      {
+        "date": "2026-02-02",
+        "greennessScore": 72,
         "isGreenerNight": false,
         "greennessIndex": "HIGH",
         "wasGreenerNight": false
