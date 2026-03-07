@@ -882,75 +882,87 @@ DESCRIPTION:Greenness Score: 22\nGreenness Index: LOW\nWas Greener Night:
 LAST-MODIFIED:20260306T074750Z
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:❌ Not Greener - Score:  21
+SUMMARY:❌ Not Greener - Score:  19
 DTSTART;VALUE=DATE:20260307
 DTEND;VALUE=DATE:20260307
-DTSTAMP:20260306T074750Z
+DTSTAMP:20260307T073746Z
 UID:greener-night-2026-03-07@greener-nights-history
 CATEGORIES:Greener Nights,LOW
 CREATED:20260301T074037Z
-DESCRIPTION:Greenness Score: 21\nGreenness Index: LOW\nWas Greener Night: 
+DESCRIPTION:Greenness Score: 19\nGreenness Index: LOW\nWas Greener Night: 
  False\nIs Greener Night (forecast): False
-LAST-MODIFIED:20260306T074750Z
+LAST-MODIFIED:20260307T073746Z
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:❌ Not Greener - Score:  24
+SUMMARY:❌ Not Greener - Score:  22
 DTSTART;VALUE=DATE:20260308
 DTEND;VALUE=DATE:20260308
-DTSTAMP:20260306T074750Z
+DTSTAMP:20260307T073746Z
 UID:greener-night-2026-03-08@greener-nights-history
 CATEGORIES:Greener Nights,LOW
 CREATED:20260302T075353Z
-DESCRIPTION:Greenness Score: 24\nGreenness Index: LOW\nWas Greener Night: 
+DESCRIPTION:Greenness Score: 22\nGreenness Index: LOW\nWas Greener Night: 
  False\nIs Greener Night (forecast): False
-LAST-MODIFIED:20260306T074750Z
+LAST-MODIFIED:20260307T073746Z
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:❌ Not Greener - Score:  36
+SUMMARY:❌ Not Greener - Score:  34
 DTSTART;VALUE=DATE:20260309
 DTEND;VALUE=DATE:20260309
-DTSTAMP:20260306T074750Z
+DTSTAMP:20260307T073746Z
 UID:greener-night-2026-03-09@greener-nights-history
 CATEGORIES:Greener Nights,MEDIUM
 CREATED:20260303T075014Z
-DESCRIPTION:Greenness Score: 36\nGreenness Index: MEDIUM\nWas Greener Nigh
+DESCRIPTION:Greenness Score: 34\nGreenness Index: MEDIUM\nWas Greener Nigh
  t: False\nIs Greener Night (forecast): False
-LAST-MODIFIED:20260306T074750Z
+LAST-MODIFIED:20260307T073746Z
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:❌ Not Greener - Score:  69
+SUMMARY:✅ Greener Night - Score:  81
 DTSTART;VALUE=DATE:20260310
 DTEND;VALUE=DATE:20260310
-DTSTAMP:20260306T074750Z
+DTSTAMP:20260307T073746Z
 UID:greener-night-2026-03-10@greener-nights-history
 CATEGORIES:Greener Nights,HIGH
 CREATED:20260304T074735Z
-DESCRIPTION:Greenness Score: 69\nGreenness Index: HIGH\nWas Greener Night:
-  False\nIs Greener Night (forecast): False
-LAST-MODIFIED:20260306T074750Z
+DESCRIPTION:Greenness Score: 81\nGreenness Index: HIGH\nWas Greener Night:
+  True\nIs Greener Night (forecast): True
+LAST-MODIFIED:20260307T073746Z
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:✅ Greener Night - Score:  72
+SUMMARY:✅ Greener Night - Score:  84
 DTSTART;VALUE=DATE:20260311
 DTEND;VALUE=DATE:20260311
-DTSTAMP:20260306T074750Z
+DTSTAMP:20260307T073746Z
 UID:greener-night-2026-03-11@greener-nights-history
 CATEGORIES:Greener Nights,HIGH
 CREATED:20260305T075023Z
-DESCRIPTION:Greenness Score: 72\nGreenness Index: HIGH\nWas Greener Night:
-  True\nIs Greener Night (forecast): False
-LAST-MODIFIED:20260306T074750Z
+DESCRIPTION:Greenness Score: 84\nGreenness Index: HIGH\nWas Greener Night:
+  True\nIs Greener Night (forecast): True
+LAST-MODIFIED:20260307T073746Z
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:✅ Greener Night - Score:  78
+SUMMARY:✅ Greener Night - Score:  79
 DTSTART;VALUE=DATE:20260312
 DTEND;VALUE=DATE:20260312
-DTSTAMP:20260306T074750Z
+DTSTAMP:20260307T073746Z
 UID:greener-night-2026-03-12@greener-nights-history
 CATEGORIES:Greener Nights,HIGH
 CREATED:20260306T074750Z
-DESCRIPTION:Greenness Score: 78\nGreenness Index: HIGH\nWas Greener Night:
-  True\nIs Greener Night (forecast): True
-LAST-MODIFIED:20260306T074750Z
+DESCRIPTION:Greenness Score: 79\nGreenness Index: HIGH\nWas Greener Night:
+  True\nIs Greener Night (forecast): False
+LAST-MODIFIED:20260307T073746Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:❌ Not Greener - Score:  43
+DTSTART;VALUE=DATE:20260313
+DTEND;VALUE=DATE:20260313
+DTSTAMP:20260307T073746Z
+UID:greener-night-2026-03-13@greener-nights-history
+CATEGORIES:Greener Nights,MEDIUM
+CREATED:20260307T073746Z
+DESCRIPTION:Greenness Score: 43\nGreenness Index: MEDIUM\nWas Greener Nigh
+ t: False\nIs Greener Night (forecast): False
+LAST-MODIFIED:20260307T073746Z
 END:VEVENT
 END:VCALENDAR
