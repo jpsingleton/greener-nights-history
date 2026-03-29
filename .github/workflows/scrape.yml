@@ -32,10 +32,6 @@ jobs:
         timestamp=$(date -u)
         git commit -m "Latest data: ${timestamp}" || exit 0
         git push
-    - name: Set up Python
-      uses: actions/setup-python@v5
-      with:
-        python-version: '3.11'
     - name: Install dependencies
       run: pip install icalendar
     - name: Generate/Update Calendar
