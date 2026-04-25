@@ -1470,18 +1470,6 @@ DESCRIPTION:Greenness Score: 5\nGreenness Index: LOW\nWas Greener Night: F
 LAST-MODIFIED:20260423T080807Z
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:✅ Greener Night - Score:  17
-DTSTART;VALUE=DATE:20260425
-DTEND;VALUE=DATE:20260425
-DTSTAMP:20260424T081904Z
-UID:greener-night-2026-04-25@greener-nights-history
-CATEGORIES:Greener Nights,LOW
-CREATED:20260419T074327Z
-DESCRIPTION:Greenness Score: 17\nGreenness Index: LOW\nWas Greener Night: 
- True\nIs Greener Night (forecast): False
-LAST-MODIFIED:20260424T081904Z
-END:VEVENT
-BEGIN:VEVENT
 SUMMARY:❌ Not Greener - Score:  11
 DTSTART;VALUE=DATE:20260426
 DTEND;VALUE=DATE:20260426
@@ -1494,51 +1482,75 @@ DESCRIPTION:Greenness Score: 11\nGreenness Index: LOW\nWas Greener Night:
 LAST-MODIFIED:20260424T081904Z
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:✅ Greener Night - Score:  20
+SUMMARY:✅ Greener Night - Score:  18
+DTSTART;VALUE=DATE:20260425
+DTEND;VALUE=DATE:20260425
+DTSTAMP:20260425T074226Z
+UID:greener-night-2026-04-25@greener-nights-history
+CATEGORIES:Greener Nights,LOW
+CREATED:20260419T074327Z
+DESCRIPTION:Greenness Score: 18\nGreenness Index: LOW\nWas Greener Night: 
+ True\nIs Greener Night (forecast): False
+LAST-MODIFIED:20260425T074226Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:✅ Greener Night - Score:  18
 DTSTART;VALUE=DATE:20260427
 DTEND;VALUE=DATE:20260427
-DTSTAMP:20260424T081904Z
+DTSTAMP:20260425T074226Z
 UID:greener-night-2026-04-27@greener-nights-history
 CATEGORIES:Greener Nights,LOW
 CREATED:20260421T080615Z
-DESCRIPTION:Greenness Score: 20\nGreenness Index: LOW\nWas Greener Night: 
+DESCRIPTION:Greenness Score: 18\nGreenness Index: LOW\nWas Greener Night: 
  True\nIs Greener Night (forecast): False
-LAST-MODIFIED:20260424T081904Z
+LAST-MODIFIED:20260425T074226Z
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:✅ Greener Night - Score:  28
+SUMMARY:✅ Greener Night - Score:  26
 DTSTART;VALUE=DATE:20260428
 DTEND;VALUE=DATE:20260428
-DTSTAMP:20260424T081904Z
+DTSTAMP:20260425T074226Z
 UID:greener-night-2026-04-28@greener-nights-history
 CATEGORIES:Greener Nights,LOW
 CREATED:20260422T080311Z
-DESCRIPTION:Greenness Score: 28\nGreenness Index: LOW\nWas Greener Night: 
- True\nIs Greener Night (forecast): True
-LAST-MODIFIED:20260424T081904Z
+DESCRIPTION:Greenness Score: 26\nGreenness Index: LOW\nWas Greener Night: 
+ True\nIs Greener Night (forecast): False
+LAST-MODIFIED:20260425T074226Z
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:✅ Greener Night - Score:  29
+SUMMARY:✅ Greener Night - Score:  33
 DTSTART;VALUE=DATE:20260429
 DTEND;VALUE=DATE:20260429
-DTSTAMP:20260424T081904Z
+DTSTAMP:20260425T074226Z
 UID:greener-night-2026-04-29@greener-nights-history
 CATEGORIES:Greener Nights,LOW
 CREATED:20260423T080807Z
-DESCRIPTION:Greenness Score: 29\nGreenness Index: LOW\nWas Greener Night: 
- True\nIs Greener Night (forecast): True
-LAST-MODIFIED:20260424T081904Z
+DESCRIPTION:Greenness Score: 33\nGreenness Index: LOW\nWas Greener Night: 
+ True\nIs Greener Night (forecast): False
+LAST-MODIFIED:20260425T074226Z
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:✅ Greener Night - Score:  30
+SUMMARY:✅ Greener Night - Score:  44
 DTSTART;VALUE=DATE:20260430
 DTEND;VALUE=DATE:20260430
-DTSTAMP:20260424T081904Z
+DTSTAMP:20260425T074226Z
 UID:greener-night-2026-04-30@greener-nights-history
-CATEGORIES:Greener Nights,LOW
+CATEGORIES:Greener Nights,MEDIUM
 CREATED:20260424T081904Z
-DESCRIPTION:Greenness Score: 30\nGreenness Index: LOW\nWas Greener Night: 
- True\nIs Greener Night (forecast): True
-LAST-MODIFIED:20260424T081904Z
+DESCRIPTION:Greenness Score: 44\nGreenness Index: MEDIUM\nWas Greener Nigh
+ t: True\nIs Greener Night (forecast): True
+LAST-MODIFIED:20260425T074226Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:❌ Not Greener - Score:  24
+DTSTART;VALUE=DATE:20260501
+DTEND;VALUE=DATE:20260501
+DTSTAMP:20260425T074226Z
+UID:greener-night-2026-05-01@greener-nights-history
+CATEGORIES:Greener Nights,LOW
+CREATED:20260425T074226Z
+DESCRIPTION:Greenness Score: 24\nGreenness Index: LOW\nWas Greener Night: 
+ False\nIs Greener Night (forecast): False
+LAST-MODIFIED:20260425T074226Z
 END:VEVENT
 END:VCALENDAR
