@@ -2,43 +2,36 @@
   "data": {
     "greenerNightsForecast": [
       {
-        "date": "2026-05-11",
-        "greennessScore": 39,
-        "isGreenerNight": false,
-        "greennessIndex": "MEDIUM",
-        "wasGreenerNight": true
-      },
-      {
         "date": "2026-05-12",
-        "greennessScore": 45,
-        "isGreenerNight": true,
+        "greennessScore": 43,
+        "isGreenerNight": false,
         "greennessIndex": "MEDIUM",
         "wasGreenerNight": true
       },
       {
         "date": "2026-05-13",
-        "greennessScore": 43,
-        "isGreenerNight": true,
+        "greennessScore": 37,
+        "isGreenerNight": false,
         "greennessIndex": "MEDIUM",
         "wasGreenerNight": true
       },
       {
         "date": "2026-05-14",
-        "greennessScore": 28,
-        "isGreenerNight": false,
-        "greennessIndex": "LOW",
-        "wasGreenerNight": false
+        "greennessScore": 47,
+        "isGreenerNight": true,
+        "greennessIndex": "MEDIUM",
+        "wasGreenerNight": true
       },
       {
         "date": "2026-05-15",
-        "greennessScore": 14,
+        "greennessScore": 21,
         "isGreenerNight": false,
         "greennessIndex": "LOW",
         "wasGreenerNight": false
       },
       {
         "date": "2026-05-16",
-        "greennessScore": 18,
+        "greennessScore": 17,
         "isGreenerNight": false,
         "greennessIndex": "LOW",
         "wasGreenerNight": false
@@ -49,6 +42,13 @@
         "isGreenerNight": false,
         "greennessIndex": "LOW",
         "wasGreenerNight": false
+      },
+      {
+        "date": "2026-05-18",
+        "greennessScore": 45,
+        "isGreenerNight": true,
+        "greennessIndex": "MEDIUM",
+        "wasGreenerNight": true
       }
     ]
   }
