@@ -1818,75 +1818,87 @@ DESCRIPTION:Greenness Score: 26\nGreenness Index: LOW\nWas Greener Night:
 LAST-MODIFIED:20260523T082927Z
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:✅ Greener Night - Score:  26
+SUMMARY:✅ Greener Night - Score:  21
 DTSTART;VALUE=DATE:20260524
 DTEND;VALUE=DATE:20260524
-DTSTAMP:20260523T082927Z
+DTSTAMP:20260524T084235Z
 UID:greener-night-2026-05-24@greener-nights-history
 CATEGORIES:Greener Nights,LOW
 CREATED:20260518T102245Z
-DESCRIPTION:Greenness Score: 26\nGreenness Index: LOW\nWas Greener Night: 
- True\nIs Greener Night (forecast): True
-LAST-MODIFIED:20260523T082927Z
+DESCRIPTION:Greenness Score: 21\nGreenness Index: LOW\nWas Greener Night: 
+ True\nIs Greener Night (forecast): False
+LAST-MODIFIED:20260524T084235Z
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:✅ Greener Night - Score:  28
+SUMMARY:✅ Greener Night - Score:  30
 DTSTART;VALUE=DATE:20260525
 DTEND;VALUE=DATE:20260525
-DTSTAMP:20260523T082927Z
+DTSTAMP:20260524T084235Z
 UID:greener-night-2026-05-25@greener-nights-history
 CATEGORIES:Greener Nights,LOW
 CREATED:20260519T100223Z
-DESCRIPTION:Greenness Score: 28\nGreenness Index: LOW\nWas Greener Night: 
- True\nIs Greener Night (forecast): True
-LAST-MODIFIED:20260523T082927Z
+DESCRIPTION:Greenness Score: 30\nGreenness Index: LOW\nWas Greener Night: 
+ True\nIs Greener Night (forecast): False
+LAST-MODIFIED:20260524T084235Z
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:❌ Not Greener - Score:  22
+SUMMARY:❌ Not Greener - Score:  26
 DTSTART;VALUE=DATE:20260526
 DTEND;VALUE=DATE:20260526
-DTSTAMP:20260523T082927Z
+DTSTAMP:20260524T084235Z
 UID:greener-night-2026-05-26@greener-nights-history
 CATEGORIES:Greener Nights,LOW
 CREATED:20260520T095145Z
-DESCRIPTION:Greenness Score: 22\nGreenness Index: LOW\nWas Greener Night: 
+DESCRIPTION:Greenness Score: 26\nGreenness Index: LOW\nWas Greener Night: 
  False\nIs Greener Night (forecast): False
-LAST-MODIFIED:20260523T082927Z
+LAST-MODIFIED:20260524T084235Z
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:❌ Not Greener - Score:  19
+SUMMARY:❌ Not Greener - Score:  29
 DTSTART;VALUE=DATE:20260527
 DTEND;VALUE=DATE:20260527
-DTSTAMP:20260523T082927Z
+DTSTAMP:20260524T084235Z
 UID:greener-night-2026-05-27@greener-nights-history
 CATEGORIES:Greener Nights,LOW
 CREATED:20260521T095940Z
-DESCRIPTION:Greenness Score: 19\nGreenness Index: LOW\nWas Greener Night: 
+DESCRIPTION:Greenness Score: 29\nGreenness Index: LOW\nWas Greener Night: 
  False\nIs Greener Night (forecast): False
-LAST-MODIFIED:20260523T082927Z
+LAST-MODIFIED:20260524T084235Z
 END:VEVENT
 BEGIN:VEVENT
-SUMMARY:✅ Greener Night - Score:  25
+SUMMARY:✅ Greener Night - Score:  35
 DTSTART;VALUE=DATE:20260528
 DTEND;VALUE=DATE:20260528
-DTSTAMP:20260523T082927Z
+DTSTAMP:20260524T084235Z
 UID:greener-night-2026-05-28@greener-nights-history
-CATEGORIES:Greener Nights,LOW
+CATEGORIES:Greener Nights,MEDIUM
 CREATED:20260522T094632Z
-DESCRIPTION:Greenness Score: 25\nGreenness Index: LOW\nWas Greener Night: 
- True\nIs Greener Night (forecast): True
-LAST-MODIFIED:20260523T082927Z
+DESCRIPTION:Greenness Score: 35\nGreenness Index: MEDIUM\nWas Greener Nigh
+ t: True\nIs Greener Night (forecast): True
+LAST-MODIFIED:20260524T084235Z
 END:VEVENT
 BEGIN:VEVENT
 SUMMARY:✅ Greener Night - Score:  25
 DTSTART;VALUE=DATE:20260529
 DTEND;VALUE=DATE:20260529
-DTSTAMP:20260523T082927Z
+DTSTAMP:20260524T084235Z
 UID:greener-night-2026-05-29@greener-nights-history
 CATEGORIES:Greener Nights,LOW
 CREATED:20260523T082927Z
 DESCRIPTION:Greenness Score: 25\nGreenness Index: LOW\nWas Greener Night: 
- True\nIs Greener Night (forecast): True
-LAST-MODIFIED:20260523T082927Z
+ True\nIs Greener Night (forecast): False
+LAST-MODIFIED:20260524T084235Z
+END:VEVENT
+BEGIN:VEVENT
+SUMMARY:✅ Greener Night - Score:  34
+DTSTART;VALUE=DATE:20260530
+DTEND;VALUE=DATE:20260530
+DTSTAMP:20260524T084235Z
+UID:greener-night-2026-05-30@greener-nights-history
+CATEGORIES:Greener Nights,MEDIUM
+CREATED:20260524T084235Z
+DESCRIPTION:Greenness Score: 34\nGreenness Index: MEDIUM\nWas Greener Nigh
+ t: True\nIs Greener Night (forecast): True
+LAST-MODIFIED:20260524T084235Z
 END:VEVENT
 END:VCALENDAR
