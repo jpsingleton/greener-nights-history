@@ -4,48 +4,20 @@
       {
         "date": "2026-07-29",
         "greennessScore": 18,
-        "isGreenerNight": false,
-        "greennessIndex": "LOW",
-        "wasGreenerNight": false
-      },
-      {
-        "date": "2026-07-30",
-        "greennessScore": 21,
-        "isGreenerNight": false,
-        "greennessIndex": "LOW",
-        "wasGreenerNight": false
-      },
-      {
-        "date": "2026-07-31",
-        "greennessScore": 18,
-        "isGreenerNight": false,
-        "greennessIndex": "LOW",
-        "wasGreenerNight": false
-      },
-      {
-        "date": "2026-08-01",
-        "greennessScore": 17,
-        "isGreenerNight": false,
-        "greennessIndex": "LOW",
-        "wasGreenerNight": false
-      },
-      {
-        "date": "2026-08-02",
-        "greennessScore": 15,
-        "isGreenerNight": false,
-        "greennessIndex": "LOW",
-        "wasGreenerNight": false
-      },
-      {
-        "date": "2026-08-03",
-        "greennessScore": 28,
         "isGreenerNight": true,
         "greennessIndex": "LOW",
         "wasGreenerNight": true
       },
       {
-        "date": "2026-08-04",
-        "greennessScore": 31,
+        "date": "2026-07-30",
+        "greennessScore": 21,
+        "isGreenerNight": true,
+        "greennessIndex": "LOW",
+        "wasGreenerNight": true
+      },
+      {
+        "date": "2026-07-31",
+        "greennessScore": 18,
         "isGreenerNight": true,
         "greennessIndex": "LOW",
         "wasGreenerNight": true
