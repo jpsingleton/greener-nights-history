@@ -1,27 +1,5 @@
 {
   "data": {
-    "greenerNightsForecast": [
-      {
-        "date": "2026-07-29",
-        "greennessScore": 18,
-        "isGreenerNight": true,
-        "greennessIndex": "LOW",
-        "wasGreenerNight": true
-      },
-      {
-        "date": "2026-07-30",
-        "greennessScore": 21,
-        "isGreenerNight": true,
-        "greennessIndex": "LOW",
-        "wasGreenerNight": true
-      },
-      {
-        "date": "2026-07-31",
-        "greennessScore": 18,
-        "isGreenerNight": true,
-        "greennessIndex": "LOW",
-        "wasGreenerNight": true
-      }
-    ]
+    "greenerNightsForecast": []
   }
 }
